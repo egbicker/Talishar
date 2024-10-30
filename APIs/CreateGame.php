@@ -29,6 +29,8 @@ $favoriteDeckLink = TryPOST("favoriteDecks", "0"); //This one is kind of weird. 
 $gameDescription = htmlentities(TryPOST("gameDescription", "Game #"), ENT_QUOTES); //Just a string with the game name
 $deckbuilderID = TryPOST("user", "");
 $deckTestDeck = TryPOST("deckTestDeck", "");
+global $seedValue;
+$seedValue = TryPOST("seed","");
 
 if ($favoriteDeckLink != 0) {
   $favDeckArr = explode("<fav>", $favoriteDeckLink);
