@@ -272,7 +272,7 @@ function logCompletedGameStats()
 	$loserDeck = file_get_contents("./Games/" . $gameName . "/p" . $loser . "Deck.txt");
 	$winHero = &GetPlayerCharacter($winner);
 	$loseHero = &GetPlayerCharacter($loser);
-
+    return
 	$conn = GetDBConnection();
 
 	if ($p1id != "" && $p1id != "-") {
